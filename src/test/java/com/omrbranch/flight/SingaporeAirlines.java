@@ -9,7 +9,7 @@ public class SingaporeAirlines extends BaseClass {
 	Integer id;
 
 	@Test(priority = 1)
-	public void createFlight() {
+	public void tc1_CreateFlight() {
 
 		addHeader("Content-Type", "application/json");
 		addBody("{\r\n" + "    \"flightName\": \"AirIndia Express\",\r\n" + "    \"Country\": \"India\",\r\n"
@@ -27,7 +27,7 @@ public class SingaporeAirlines extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void singleFlight() {
+	public void tc2_SingleFlight() {
 		addHeader("Content-Type", "application/json");
 		Response response = addReqType("GET", "https://omrbranch.com/api/flight/" + id);
 		int statusCode = getStatusCode(response);
@@ -37,7 +37,7 @@ public class SingaporeAirlines extends BaseClass {
 	}
 
 	@Test(priority = 3)
-	public void updateFlight() {
+	public void tc3_UpdateFlight() {
 		addHeader("Content-Type", "application/json");
 		addBody("{\r\n" + "    \"flightName\": \"Singapore Airlines\",\r\n" + "    \"Country\": \"Singapore\",\r\n"
 				+ "    \"Destinations\": \"37\",\r\n"
@@ -50,7 +50,7 @@ public class SingaporeAirlines extends BaseClass {
 	}
 
 	@Test(priority = 4)
-	public void updateSingleField() {
+	public void tc4_UpdateSingleField() {
 		addHeader("Content-Type", "application/json");
 		addBody("{\r\n" + "    \"Destinations\": 77\r\n" + "}");
 		Response response = addReqType("PATCH", "https://omrbranch.com/api/flight/" + id);
@@ -62,7 +62,7 @@ public class SingaporeAirlines extends BaseClass {
 	}
 
 	@Test(priority = 5)
-	public void deleteFlight() {
+	public void tc5_DeleteFlight() {
 		addHeader("Content-Type", "application/json");
 		Response response = addReqType("DELETE", "https://omrbranch.com/api/flight/" + id);
 		int statusCode = getStatusCode(response);
@@ -71,7 +71,7 @@ public class SingaporeAirlines extends BaseClass {
 	}
 
 	@Test(priority = 6)
-	public void listFlight() {
+	public void tc6_ListFlight() {
 		addHeader("Content-Type", "application/json");
 		Response response = addReqType("GET", "https://omrbranch.com/api/flights?page=1628");
 		int statusCode = getStatusCode(response);
