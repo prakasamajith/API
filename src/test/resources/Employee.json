@@ -1,13 +1,52 @@
 {
-    "data": {
-        "id": 33577,
-        "flightName": "GREENS OMR Flight",
-        "Country": "India",
-        "Destinations": "87",
-        "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India",
-        "Created_Date": "2024-10-18 16:04:14",
-        "Updated_Date": "2024-10-18 16:04:14"
-    },
+    "page": 1,
+    "per_page": 6,
+    "total": 9118,
+    "total_pages": 1520,
+    "data": [
+        {
+            "id": 3,
+            "flightName": "AirIndia",
+            "Country": "India",
+            "Destinations": "28",
+            "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India"
+        },
+        {
+            "id": 33,
+            "flightName": "AirIndia",
+            "Country": "India",
+            "Destinations": "20",
+            "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India"
+        },
+        {
+            "id": 36,
+            "flightName": "AirIndia",
+            "Country": "India",
+            "Destinations": "71",
+            "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India"
+        },
+        {
+            "id": 42,
+            "flightName": "AirIndia.Raj",
+            "Country": "India",
+            "Destinations": "98",
+            "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India"
+        },
+        {
+            "id": 49,
+            "flightName": "AirIndia",
+            "Country": "India",
+            "Destinations": "88",
+            "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India"
+        },
+        {
+            "id": 59,
+            "flightName": "AirIndia",
+            "Country": "India",
+            "Destinations": "87",
+            "URL": "https:\/\/en.wikipedia.org\/wiki\/Air_India"
+        }
+    ],
     "support": {
         "url": "https:\/\/omrbranch.com",
         "text": "For Joining Automation Course, Please Contact-Velmurugan 9944152058"

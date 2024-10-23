@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-23T17:01:04 IST" name="Default suite" finished-at="2024-10-23T17:01:11 IST" duration-ms="7233">
+    <groups>
+    </groups>
+    <test started-at="2024-10-23T17:01:04 IST" name="Default test" finished-at="2024-10-23T17:01:11 IST" duration-ms="7233">
+      <class name="com.omrbranch.flight.SingaporeAirlines">
+        <test-method signature="createFlight()[pri:1, instance:com.omrbranch.flight.SingaporeAirlines@35d019a3]" started-at="2024-10-23T17:01:04 IST" name="createFlight" finished-at="2024-10-23T17:01:08 IST" duration-ms="3673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFlight -->
+        <test-method signature="singleFlight()[pri:2, instance:com.omrbranch.flight.SingaporeAirlines@35d019a3]" started-at="2024-10-23T17:01:08 IST" name="singleFlight" finished-at="2024-10-23T17:01:08 IST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleFlight -->
+        <test-method signature="updateFlight()[pri:3, instance:com.omrbranch.flight.SingaporeAirlines@35d019a3]" started-at="2024-10-23T17:01:08 IST" name="updateFlight" finished-at="2024-10-23T17:01:09 IST" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateFlight -->
+        <test-method signature="updateSingleField()[pri:4, instance:com.omrbranch.flight.SingaporeAirlines@35d019a3]" started-at="2024-10-23T17:01:09 IST" name="updateSingleField" finished-at="2024-10-23T17:01:10 IST" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateSingleField -->
+        <test-method signature="deleteFlight()[pri:5, instance:com.omrbranch.flight.SingaporeAirlines@35d019a3]" started-at="2024-10-23T17:01:10 IST" name="deleteFlight" finished-at="2024-10-23T17:01:11 IST" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFlight -->
+        <test-method signature="listFlight()[pri:6, instance:com.omrbranch.flight.SingaporeAirlines@35d019a3]" started-at="2024-10-23T17:01:11 IST" name="listFlight" finished-at="2024-10-23T17:01:11 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listFlight -->
+      </class> <!-- com.omrbranch.flight.SingaporeAirlines -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

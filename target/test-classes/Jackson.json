@@ -1,0 +1,16 @@
+{
+	"name":"Bala",
+	"emailId":"bala@gmail.com",
+	"phoneNo":9944152058,
+	"course":"JAVA",
+	"address":{
+		 "streetName":"AK",
+		 "cityName":"Chennai",
+		 "pincode":600098
+	}
+	
+	
+	
+	
+	
+}
