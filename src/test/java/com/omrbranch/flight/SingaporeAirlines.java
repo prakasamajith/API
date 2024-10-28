@@ -6,7 +6,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class SingaporeAirlines extends BaseClass {
-	Integer id;
+	Object obj;
 
 	@Test(priority = 1)
 	public void tc1_CreateFlight() {
@@ -18,8 +18,8 @@ public class SingaporeAirlines extends BaseClass {
 		Response response = addReqType("POST", "https://omrbranch.com/api/flights");
 		JsonPath jsonPath = response.jsonPath();
 		Object object = jsonPath.get("data.id");
-		id = (Integer) object;
-		System.out.println(id);
+		obj = (Integer) object;
+		System.out.println(obj);
 		int statusCode = getStatusCode(response);
 		System.out.println(statusCode);
 		String resBodyAsPrettyString = getResBodyAsPrettyString(response);
@@ -29,7 +29,7 @@ public class SingaporeAirlines extends BaseClass {
 	@Test(priority = 2)
 	public void tc2_SingleFlight() {
 		addHeader("Content-Type", "application/json");
-		Response response = addReqType("GET", "https://omrbranch.com/api/flight/" + id);
+		Response response = addReqType("GET", "https://omrbranch.com/api/flight/" + obj);
 		int statusCode = getStatusCode(response);
 		System.out.println(statusCode);
 		String resBodyAsPrettyString = getResBodyAsPrettyString(response);
@@ -42,7 +42,7 @@ public class SingaporeAirlines extends BaseClass {
 		addBody("{\r\n" + "    \"flightName\": \"Singapore Airlines\",\r\n" + "    \"Country\": \"Singapore\",\r\n"
 				+ "    \"Destinations\": \"37\",\r\n"
 				+ "    \"URL\": \"https:\\/\\/en.wikipedia.org\\/wiki\\/Singapore_Airlines\"\r\n" + "}");
-		Response response = addReqType("PUT", "https://omrbranch.com/api/flight/" + id);
+		Response response = addReqType("PUT", "https://omrbranch.com/api/flight/" + obj);
 		int statusCode = getStatusCode(response);
 		System.out.println(statusCode);
 		String resBodyAsPrettyString = getResBodyAsPrettyString(response);
@@ -53,7 +53,7 @@ public class SingaporeAirlines extends BaseClass {
 	public void tc4_UpdateSingleField() {
 		addHeader("Content-Type", "application/json");
 		addBody("{\r\n" + "    \"Destinations\": 77\r\n" + "}");
-		Response response = addReqType("PATCH", "https://omrbranch.com/api/flight/" + id);
+		Response response = addReqType("PATCH", "https://omrbranch.com/api/flight/" + obj);
 		int statusCode = getStatusCode(response);
 		System.out.println(statusCode);
 		String resBodyAsPrettyString = getResBodyAsPrettyString(response);
@@ -64,7 +64,7 @@ public class SingaporeAirlines extends BaseClass {
 	@Test(priority = 5)
 	public void tc5_DeleteFlight() {
 		addHeader("Content-Type", "application/json");
-		Response response = addReqType("DELETE", "https://omrbranch.com/api/flight/" + id);
+		Response response = addReqType("DELETE", "https://omrbranch.com/api/flight/" + obj);
 		int statusCode = getStatusCode(response);
 		System.out.println(statusCode);
 
