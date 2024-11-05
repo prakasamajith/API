@@ -1,6 +1,7 @@
 package com.omrbranch.baseclass;
 
 import io.restassured.RestAssured;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -12,8 +13,20 @@ public class BaseClass {
 		reqSpec = RestAssured.given().header(key, value);
 	}
 
+	public void addHeaders(Headers headers) {
+		reqSpec = RestAssured.given().headers(headers);
+	}
+
+	public void addBody(Object body) {
+		reqSpec = reqSpec.body(body);
+	}
+
 	public void addBody(String body) {
 		reqSpec = reqSpec.body(body);
+	}
+
+	public void addBasicAuth(String userName, String password) {
+		reqSpec = reqSpec.auth().preemptive().basic(userName, password);
 	}
 
 	public Response addReqType(String type, String endpoint) {
