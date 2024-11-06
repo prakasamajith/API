@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.omrbranch.pojo.login.Sample_Login">
+      <class name="com.omrbranch.pojo.sample.Sample_Api">
         <methods>
-          <include name="getCityList"/>
+          <include name="updateUserAddress"/>
         </methods>
-      </class> <!-- com.omrbranch.pojo.login.Sample_Login -->
+      </class> <!-- com.omrbranch.pojo.sample.Sample_Api -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
