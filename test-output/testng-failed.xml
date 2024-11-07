@@ -5,7 +5,7 @@
     <classes>
       <class name="com.omrbranch.pojo.sample.Sample_Api">
         <methods>
-          <include name="updateUserAddress"/>
+          <include name="productList"/>
         </methods>
       </class> <!-- com.omrbranch.pojo.sample.Sample_Api -->
     </classes>
