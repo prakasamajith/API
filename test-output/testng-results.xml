@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-07T18:12:08 IST" name="Default suite" finished-at="2024-11-07T18:12:13 IST" duration-ms="4718">
+  <suite started-at="2024-11-08T14:52:58 IST" name="Default suite" finished-at="2024-11-08T14:53:01 IST" duration-ms="3041">
     <groups>
     </groups>
-    <test started-at="2024-11-07T18:12:08 IST" name="Default test" finished-at="2024-11-07T18:12:13 IST" duration-ms="4718">
+    <test started-at="2024-11-08T14:52:58 IST" name="Default test" finished-at="2024-11-08T14:53:01 IST" duration-ms="3041">
       <class name="com.omrbranch.pojo.sample.Sample_Api">
-        <test-method signature="login()[pri:1, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:08 IST" name="login" finished-at="2024-11-07T18:12:10 IST" duration-ms="1954" status="PASS">
+        <test-method signature="searchProduct()[pri:8, instance:com.omrbranch.pojo.sample.Sample_Api@5c6648b0]" started-at="2024-11-08T14:52:58 IST" name="searchProduct" finished-at="2024-11-08T14:53:01 IST" duration-ms="2941" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="getStateList()[pri:2, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:10 IST" name="getStateList" finished-at="2024-11-07T18:12:11 IST" duration-ms="303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getStateList -->
-        <test-method signature="getCityList()[pri:3, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:11 IST" name="getCityList" finished-at="2024-11-07T18:12:11 IST" duration-ms="401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCityList -->
-        <test-method signature="addUserAddress()[pri:4, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:11 IST" name="addUserAddress" finished-at="2024-11-07T18:12:11 IST" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUserAddress -->
-        <test-method signature="updateUserAddress()[pri:5, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:11 IST" name="updateUserAddress" finished-at="2024-11-07T18:12:12 IST" duration-ms="334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserAddress -->
-        <test-method signature="getUserAddress()[pri:6, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:12 IST" name="getUserAddress" finished-at="2024-11-07T18:12:12 IST" duration-ms="365" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserAddress -->
-        <test-method signature="categoryList()[pri:9, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:12 IST" name="categoryList" finished-at="2024-11-07T18:12:12 IST" duration-ms="312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- categoryList -->
-        <test-method signature="productList()[pri:10, instance:com.omrbranch.pojo.sample.Sample_Api@4135c3b]" started-at="2024-11-07T18:12:12 IST" name="productList" finished-at="2024-11-07T18:12:13 IST" duration-ms="677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productList -->
+        </test-method> <!-- searchProduct -->
       </class> <!-- com.omrbranch.pojo.sample.Sample_Api -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

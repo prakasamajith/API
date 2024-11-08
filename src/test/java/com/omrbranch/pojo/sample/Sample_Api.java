@@ -6,6 +6,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.omrbranch.baseclass.BaseClass;
+import com.omrbranch.cart.CartClear_Output_Pojo;
 import com.omrbranch.category.pojo.CategoryList_Output_Pojo;
 import com.omrbranch.category.pojo.ChildCatList;
 import com.omrbranch.category.pojo.DataClass;
@@ -238,12 +239,12 @@ public class Sample_Api extends BaseClass {
 
 	}
 
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 8, enabled = true)
 	public void searchProduct() {
 		// 1.Add Header
 		List<Header> lstHeader = new ArrayList<>();
 		Header h1 = new Header("accept", "application/json");
-		Header h2 = new Header("Authorization", "Bearer " + logtoken);
+		Header h2 = new Header("Content-Type", "application/json");
 		lstHeader.add(h1);
 		lstHeader.add(h2);
 		Headers headers = new Headers(lstHeader);
@@ -258,7 +259,9 @@ public class Sample_Api extends BaseClass {
 		Search_Output_Pojo search_Output_Pojo = response.as(Search_Output_Pojo.class);
 		ArrayList<SearchResults> data = search_Output_Pojo.getData();
 		for (SearchResults results : data) {
+			String text = results.getText();
 			int id = results.getId();
+			System.out.println(text);
 			System.out.println(id);
 		}
 	}
@@ -312,21 +315,39 @@ public class Sample_Api extends BaseClass {
 		for (Datum datum : data) {
 			String productNames = datum.getName();
 			if (productNames.equals("Nuts & Seeds - Raw Peanut")) {
+				ArrayList<Variation> variations = datum.getVariations();
+				for (Variation datum2 : variations) {
+					String specifications = datum2.getSpecifications();
+					if(specifications.equals("500 g")) {
+						int id = datum2.getId();
+						System.out.println("Variation Id:" +id);
+					}
+				}
 				int nutsId = datum.getId();
 				nutsIdText = String.valueOf(nutsId);
 				System.out.println("Product Id:" + nutsIdText);
 			}
-			ArrayList<Variation> variations = datum.getVariations();
-			for (Variation variationsData : variations) {
-				String specifications = variationsData.getSpecifications();
-				if (specifications.equals("500 g")) {
-					int id2 = variationsData.getId();
-					System.out.println("Variation Id:" + id2);
-				}
-			}
 		}
 	}
-	
-	
+
+	@Test(priority = 10)
+	public void clearCart() {
+		// 1.Add Header
+		List<Header> lstHeader = new ArrayList<>();
+		Header h1 = new Header("accept", "application/json");
+		Header h2 = new Header("Authorization", "Bearer " + logtoken);
+		lstHeader.add(h1);
+		lstHeader.add(h2);
+		Headers headers = new Headers(lstHeader);
+		addHeaders(headers);
+		//2.req type
+		Response response = addReqType("GET", "https://omrbranch.com/api/clearCart");
+		int statusCode = getStatusCode(response);
+		System.out.println(statusCode);
+		CartClear_Output_Pojo cartClear_Output_Pojo = response.as(CartClear_Output_Pojo.class);
+		String actMessage = cartClear_Output_Pojo.getMessage();
+		System.out.println(actMessage);
+		Assert.assertEquals(actMessage,"Cart has been cleared.","Verify Cart has been cleared message");
+	}
 
 }

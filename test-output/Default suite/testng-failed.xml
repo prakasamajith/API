@@ -5,7 +5,7 @@
     <classes>
       <class name="com.omrbranch.pojo.sample.Sample_Api">
         <methods>
-          <include name="productList"/>
+          <include name="searchProduct"/>
         </methods>
       </class> <!-- com.omrbranch.pojo.sample.Sample_Api -->
     </classes>
