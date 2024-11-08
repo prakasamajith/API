@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DeleteAddress_Input_Pojo {
-	private int address_id;
+	private String address_id;
 }

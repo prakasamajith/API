@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Thangapandiyan P\AppData\Local\Temp\testng-eclipse-163158922\testng-customsuite.xml</span>
+                    <span>C:\Users\Thangapandiyan P\AppData\Local\Temp\testng-eclipse-998418659\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="clearCart">clearCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,52 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="addUserAddress">addUserAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="categoryList">categoryList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="deleteUserAddress">deleteUserAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="getCityList">getCityList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="getStateList">getStateList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="getUserAddress">getUserAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="productList">productList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.omrbranch.pojo.sample.Sample_Api" class="method navigator-link" hash-for-method="updateUserAddress">updateUserAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -118,6 +177,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.omrbranch.pojo.sample.Sample_Api</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearCart">
+                  </a> <!-- clearCart -->
+                  <span class="method-name">clearCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verify Cart has been cleared message expected [Cart has been cleared.] but found [Currently Your Cart is empty]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.omrbranch.pojo.sample.Sample_Api.clearCart(Sample_Api.java:350)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -126,9 +235,72 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addUserAddress">
+                  </a> <!-- addUserAddress -->
+                  <span class="method-name">addUserAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryList">
+                  </a> <!-- categoryList -->
+                  <span class="method-name">categoryList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUserAddress">
+                  </a> <!-- deleteUserAddress -->
+                  <span class="method-name">deleteUserAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityList">
+                  </a> <!-- getCityList -->
+                  <span class="method-name">getCityList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStateList">
+                  </a> <!-- getStateList -->
+                  <span class="method-name">getStateList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserAddress">
+                  </a> <!-- getUserAddress -->
+                  <span class="method-name">getUserAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productList">
+                  </a> <!-- productList -->
+                  <span class="method-name">productList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="searchProduct">
                   </a> <!-- searchProduct -->
                   <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserAddress">
+                  </a> <!-- updateUserAddress -->
+                  <span class="method-name">updateUserAddress</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +308,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Thangapandiyan P\AppData\Local\Temp\testng-eclipse-163158922\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Thangapandiyan P\AppData\Local\Temp\testng-eclipse-998418659\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +317,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.omrbranch.pojo.sample.Sample_Api&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;searchProduct&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.omrbranch.pojo.sample.Sample_Api --&gt;
+      &lt;class name=&quot;com.omrbranch.pojo.sample.Sample_Api&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,16 +357,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchProduct')
+data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.omrbranch.pojo.sample.Sample_Api')
-data.setCell(0, 3, 2941);
+data.setCell(0, 3, 3198);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'productList')
+data.setCell(1, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(1, 3, 678);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getCityList')
+data.setCell(2, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(2, 3, 521);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateUserAddress')
+data.setCell(3, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(3, 3, 440);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getUserAddress')
+data.setCell(4, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(4, 3, 370);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addUserAddress')
+data.setCell(5, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(5, 3, 335);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deleteUserAddress')
+data.setCell(6, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(6, 3, 316);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'searchProduct')
+data.setCell(7, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(7, 3, 316);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getStateList')
+data.setCell(8, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(8, 3, 311);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'categoryList')
+data.setCell(9, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(9, 3, 266);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'clearCart')
+data.setCell(10, 2, 'com.omrbranch.pojo.sample.Sample_Api')
+data.setCell(10, 3, 251);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,34 +421,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">10 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.omrbranch.pojo.sample.Sample_Api</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">addUserAddress</span>
-                <br/>
-                <span class="ignored-method-name">updateUserAddress</span>
-                <br/>
-                <span class="ignored-method-name">login</span>
-                <br/>
-                <span class="ignored-method-name">deleteUserAddress</span>
-                <br/>
-                <span class="ignored-method-name">getCityList</span>
-                <br/>
-                <span class="ignored-method-name">clearCart</span>
-                <br/>
-                <span class="ignored-method-name">getUserAddress</span>
-                <br/>
-                <span class="ignored-method-name">categoryList</span>
-                <br/>
-                <span class="ignored-method-name">productList</span>
-                <br/>
-                <span class="ignored-method-name">getStateList</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -251,8 +434,50 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.omrbranch.pojo.sample.Sample_Api</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">searchProduct</span>
+                <span class="method-name">login</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getStateList</span>
+                <span class="method-start">3223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityList</span>
+                <span class="method-start">3539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUserAddress</span>
+                <span class="method-start">4068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUserAddress</span>
+                <span class="method-start">4405 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserAddress</span>
+                <span class="method-start">4852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUserAddress</span>
+                <span class="method-start">5226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">5550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryList</span>
+                <span class="method-start">5868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clearCart</span>
+                <span class="method-start">6137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productList</span>
+                <span class="method-start">6392 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

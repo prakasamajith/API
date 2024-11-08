@@ -213,7 +213,7 @@ public class Sample_Api extends BaseClass {
 		}
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void deleteUserAddress() {
 		// 1.Add Header
 		List<Header> lstHeader = new ArrayList<>();
@@ -226,7 +226,7 @@ public class Sample_Api extends BaseClass {
 		Headers headers = new Headers(lstHeader);
 		addHeaders(headers);
 		// 2.Payload / Req Body
-		DeleteAddress_Input_Pojo deleteAddress_Input_Pojo = new DeleteAddress_Input_Pojo(95300);
+		DeleteAddress_Input_Pojo deleteAddress_Input_Pojo = new DeleteAddress_Input_Pojo(address_idNum);
 		addBody(deleteAddress_Input_Pojo);
 		// 3.Req type
 		Response response = addReqType("DELETE", "https://omrbranch.com/api/deleteAddress");
@@ -330,7 +330,7 @@ public class Sample_Api extends BaseClass {
 		}
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10,enabled = !true)
 	public void clearCart() {
 		// 1.Add Header
 		List<Header> lstHeader = new ArrayList<>();
